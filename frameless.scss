@@ -172,22 +172,17 @@ body {
 }
 
 
-/*
-	An easy way to zoom your entire layout in or out (as long as it's set in ems).
-	Just change the media queries to activate them.
-	Assuming your base font-size is 16:
-	- the first one zooms out by a factor of (16-2)/16 = 0.875
-	- the second one zooms in by a factor of (16+2)/16 = 1.125  
-*/
+/* MEDIA QUERIES */
 
-@media screen and (max-width: 1px) {
-	body {
-		font-size: ($font-size - 2) / $em;
-	}
+/* Mobile (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 }
 
-@media screen and (max-width: 1px) {
-	body {
-		font-size: ($font-size + 2) / $em;
-	}
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+}
+
+/* Standard desktop and laptop screens */
+@media only screen and (min-width: 1024px){
+
 }
